@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/listener-dev/listener-core/issues"
   },
-  "homepage": "https://github.com/listener-dev/listener-core#readme"
+  "homepage": "https://github.com/listener-dev/listener-core#readme",
+  "dependencies": {
+    "yup": "^1.6.1"
+  }
 }
