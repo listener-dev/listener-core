@@ -8,4 +8,4 @@ export const sessionRsvpSchema = yup.object({
     .oneOf(["going", "not_going", "maybe"])
     .required(),
 });
-export type SessionRsvp = yup.InferType<typeof sessionRsvpSchema>;
+export type SessionRsvpValue = yup.InferType<typeof sessionRsvpSchema>;

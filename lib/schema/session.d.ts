@@ -12,3 +12,4 @@ export declare const session: yup.ObjectSchema<{
     startTime: undefined;
     durationMinutes: undefined;
 }, "">;
+export type SessionValue = yup.InferType<typeof session>;

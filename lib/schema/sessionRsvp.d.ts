@@ -8,4 +8,4 @@ export declare const sessionRsvpSchema: yup.ObjectSchema<{
     userId: undefined;
     status: undefined;
 }, "">;
-export type SessionRsvp = yup.InferType<typeof sessionRsvpSchema>;
+export type SessionRsvpValue = yup.InferType<typeof sessionRsvpSchema>;

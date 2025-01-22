@@ -2,7 +2,11 @@
   "name": "listener-core",
   "version": "0.0.1",
   "description": "Schema defintions and other shared tools",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rm -rf ./lib/",
     "tsc:build": "tsc --project tsconfig.build.json",
