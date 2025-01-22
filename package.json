@@ -4,7 +4,9 @@
   "description": "Schema defintions and other shared tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf ./lib/",
+    "tsc:build": "tsc --project tsconfig.build.json",
+    "build": "yarn clean && yarn tsc:build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "homepage": "https://github.com/listener-dev/listener-core#readme",
   "dependencies": {
     "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
   }
 }
