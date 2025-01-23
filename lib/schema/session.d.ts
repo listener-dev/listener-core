@@ -6,10 +6,16 @@ export declare const session: yup.ObjectSchema<{
         seconds: number;
         nanoseconds: number;
         toDate: Function;
-    } | null | undefined;
+    };
     durationMinutes: number;
 }, yup.AnyObject, {
-    startTime: undefined;
+    startTime: {
+        seconds: undefined;
+        nanoseconds: undefined;
+        isEqual: undefined;
+        toMillis: undefined;
+        toDate: undefined;
+    };
     durationMinutes: undefined;
 }, "">;
 export type SessionValue = yup.InferType<typeof session>;
