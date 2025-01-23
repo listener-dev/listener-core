@@ -1,11 +1,7 @@
 import * as yup from "yup";
 export declare const sessionRsvpSchema: yup.ObjectSchema<{
-    sessionId: string;
-    userId: string;
-    status: NonNullable<"going" | "not_going" | "maybe" | undefined>;
+    status: NonNullable<"going" | "not_going" | undefined>;
 }, yup.AnyObject, {
-    sessionId: undefined;
-    userId: undefined;
     status: undefined;
 }, "">;
 export type SessionRsvpValue = yup.InferType<typeof sessionRsvpSchema>;
