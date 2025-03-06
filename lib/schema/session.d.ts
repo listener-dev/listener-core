@@ -8,6 +8,7 @@ export declare const session: yup.ObjectSchema<{
         toDate: Function;
     };
     durationMinutes: number;
+    title: string;
 }, yup.AnyObject, {
     startTime: {
         seconds: undefined;
@@ -17,5 +18,6 @@ export declare const session: yup.ObjectSchema<{
         toDate: undefined;
     };
     durationMinutes: undefined;
+    title: undefined;
 }, "">;
 export type SessionValue = yup.InferType<typeof session>;
