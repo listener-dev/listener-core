@@ -6,5 +6,6 @@ export const sessionRsvpSchema = yup.object({
     .mixed<"going" | "not_going">()
     .oneOf(["going", "not_going"])
     .required(),
+  comments: yup.string().optional(),
 });
 export type SessionRsvpValue = yup.InferType<typeof sessionRsvpSchema>;

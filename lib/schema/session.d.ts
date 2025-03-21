@@ -9,6 +9,7 @@ export declare const session: yup.ObjectSchema<{
     };
     durationMinutes: number;
     title: string;
+    livekitRoomName: string | undefined;
 }, yup.AnyObject, {
     startTime: {
         seconds: undefined;
@@ -19,5 +20,6 @@ export declare const session: yup.ObjectSchema<{
     };
     durationMinutes: undefined;
     title: undefined;
+    livekitRoomName: undefined;
 }, "">;
 export type SessionValue = yup.InferType<typeof session>;
